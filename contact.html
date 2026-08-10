@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Messett Associates, Inc.</title>
+  <meta name="description" content="Connect with Messett Associates, Inc. for executive retained search requests, M&A inquiries, joint ventures, or corporate strategy consultation.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo" id="headerLogo">MAI<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        &#9776;
+      </button>
+      <nav class="nav" id="navMenu">
+        <a href="index.html" class="nav-link" id="navHome">Home</a>
+        <a href="about.html" class="nav-link" id="navAbout">About Us</a>
+        <a href="services.html" class="nav-link" id="navServices">Services</a>
+        <a href="cases.html" class="nav-link" id="navCases">Case Studies</a>
+        <a href="contact.html" class="btn btn-outline-white" id="navContact">Get In Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Title Banner -->
+  <section class="hero" style="padding: 5rem 0 4rem;">
+    <div class="container">
+      <p class="hero-subtitle">Discreet corporate consultation</p>
+      <h1 class="hero-title" style="margin-bottom: 0;">Contact Messett Associates</h1>
+    </div>
+  </section>
+
+  <!-- Contact Form & Details Section -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="grid-2">
+        <!-- Contact Information -->
+        <div>
+          <h2 id="contactInfoHeading">Corporate Inquiry Channels</h2>
+          <p>We invite corporations seeking retained search services, joint venture counseling, or mergers &amp; acquisitions support to contact us for a confidential introductory discussion.</p>
+          <p>Candidates seeking high-level placement opportunities are also welcome to submit their credentials for future consideration.</p>
+          
+          <div style="margin-top: 3rem;">
+            <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">Florida Headquarters</h3>
+            <p style="margin-bottom: 0.75rem; color: var(--color-text-muted);">
+              <strong>Address:</strong> Messett Associates, Inc.<br>
+              Corporate Advisory &amp; Recruiting Division<br>
+              Florida, USA
+            </p>
+            <p style="margin-bottom: 0.75rem; color: var(--color-text-muted);">
+              <strong>General Inquiries:</strong> <a href="mailto:info@messett.com" style="color: var(--color-accent); font-weight: 500;">info@messett.com</a>
+            </p>
+            <p style="margin-bottom: 0.75rem; color: var(--color-text-muted);">
+              <strong>Managing Partner Email:</strong> <a href="mailto:wmessett@messett.com" style="color: var(--color-accent); font-weight: 500;">wmessett@messett.com</a>
+            </p>
+          </div>
+          
+          <div class="callout" style="margin-top: 2.5rem; padding: 2rem;">
+            <h4 style="margin-bottom: 0.5rem;">Strict Discretion Protocol</h4>
+            <p style="color: #94A3B8; font-size: 0.9rem; line-height: 1.5;">
+              All corporate briefings, candidate dossiers, and partnership inquiries are handled strictly under non-disclosure protocols. Client identities are protected at every stage of research.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="card">
+          <h3 style="margin-bottom: 1.5rem;">Submit an Inquiry</h3>
+          
+          <!-- Message divs -->
+          <div id="successMsg" class="message message-success"></div>
+          <div id="errorMsg" class="message message-error"></div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="clientName" class="form-label">Full Name *</label>
+              <input type="text" id="clientName" class="form-input" placeholder="e.g., John Doe" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="clientEmail" class="form-label">Corporate Email *</label>
+              <input type="email" id="clientEmail" class="form-input" placeholder="name@company.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="clientCompany" class="form-label">Company Name</label>
+              <input type="text" id="clientCompany" class="form-input" placeholder="e.g., Acme Corp.">
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryType" class="form-label">Inquiry Area</label>
+              <select id="inquiryType" class="form-select">
+                <option value="Retained Executive Search">Retained Executive Search</option>
+                <option value="Mergers & Acquisitions">Mergers &amp; Acquisitions / M&amp;A</option>
+                <option value="Strategic Partnerships">Strategic Partnerships / Joint Ventures</option>
+                <option value="Candidate Inquiry">Candidate / Career Opportunity</option>
+                <option value="General Corporate Advisory">General Corporate Advisory</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="clientMessage" class="form-label">Brief Overview *</label>
+              <textarea id="clientMessage" class="form-textarea" placeholder="Please outline your leadership requirements or transaction timeline..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Submit Confidential Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-3">
+        <div>
+          <h4 id="footerBrand">MAI</h4>
+          <p style="margin-top: 1rem;">Messett Associates, Inc. is a leading international retained search and corporate advisory firm, trusted by global organizations since 1987.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footerLinkHome">Home</a></li>
+            <li><a href="about.html" id="footerLinkAbout">About Us</a></li>
+            <li><a href="services.html" id="footerLinkServices">Our Services</a></li>
+            <li><a href="cases.html" id="footerLinkCases">Case Studies</a></li>
+            <li><a href="contact.html" id="footerLinkContact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h4>Global Headquarters</h4>
+          <p><strong>Address:</strong> Florida, USA</p>
+          <p><strong>Phone:</strong> Available on Contact Page</p>
+          <p><strong>Email:</strong> info@messett.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Messett Associates, Inc. All Rights Reserved. Built to modern standards.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
