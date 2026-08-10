@@ -188,10 +188,33 @@ a {
   font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.logo span {
+.logo .logo-divider {
   color: var(--color-accent);
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.logo .logo-text {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #E2E8F0;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .logo .logo-divider,
+  .logo .logo-text {
+    display: none;
+  }
 }
 
 .nav {
